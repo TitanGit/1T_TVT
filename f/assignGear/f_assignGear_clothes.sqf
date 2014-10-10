@@ -25,6 +25,14 @@ if (_typeOfUnit in _heavy) then {
 	_rig = _heavyRig;
 };
 
+// Commander
+if (_typeOfUnit in _co) then {
+	_helmet = _coHelmet;
+	_uniform = _coUniform;
+	_rig = _coRig;
+	_glasses = _coGlasses
+};
+
 // Pilot
 if (_typeOfUnit in _pilot) then {
 	_helmet = _pilotHelmet;
@@ -68,7 +76,7 @@ if (_typeOfUnit in _specOp) then {
 // Add uniforms to unit
 if(count _uniform > 0) then
 {
-	_unit forceadduniform (_uniform call BIS_fnc_selectRandom);
+	_unit forceAdduniform (_uniform call BIS_fnc_selectRandom);
 };
 if(count _Helmet > 0) then
 {

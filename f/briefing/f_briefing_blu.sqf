@@ -2,12 +2,10 @@
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 // ====================================================================================
 
-// FACTION: NATO
+// SIDE: Blufor
 
 // ====================================================================================
-
 // TASKS
-// The code below creates tasks. A (commented-out) sample task is included.
 
 // _task1 = player createSimpleTask ["OBJ_1"];
 // _task1 setSimpleTaskDescription ["IN DEPTH OBJECTIVE DESCRIPTION", "SHORT OBJECTIVE DESCRIPTION", "WAYPOINT TEXT"];
@@ -21,7 +19,7 @@
 
 _cre = player createDiaryRecord ["diary", ["Credits","
 <br/>
-*** Insert mission credits here. ***
+Made by: *** Insert  here***
 <br/><br/>
 Made with F3 (http://www.ferstaberinde.com/f3/en/)
 "]];

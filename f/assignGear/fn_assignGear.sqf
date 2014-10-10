@@ -84,44 +84,44 @@ if (f_var_debugMode == 1) then
 
 // ====================================================================================
 
-// GEAR: BLUFOR > NATO
-// The following block of code executes only if the unit is in a NATO slot; it
+// GEAR: BLUFOR
+// The following block of code executes only if the unit is in a Blufor slot; it
 // automatically includes a file which contains the appropriate equipment data.
 
 
 if (_faction == "blu_f") then {
-#include "f_assignGear_nato.sqf"
+	#include "f_assignGear_NATO_1T.sqf"
 };
 
 
 // ====================================================================================
 
-// GEAR: OPFOR > CSAT
-// The following block of code executes only if the unit is in a CSAT slot; it
+// GEAR: OPFOR
+// The following block of code executes only if the unit is in a Opfor slot; it
 // automatically includes a file which contains the appropriate equipment data.
 
 if (_faction == "opf_f") then {
-	#include "f_assignGear_csat.sqf"
+	#include "f_assignGear_csat_1T.sqf"
 };
 
 // ====================================================================================
 
-// GEAR: INDEPEDENT > AAF
-// The following block of code executes only if the unit is in a AAF slot; it
+// GEAR: INDEPEDENT
+// The following block of code executes only if the unit is in a Independent slot; it
 // automatically includes a file which contains the appropriate equipment data.
 
 if(_faction == "ind_f") then {
-	#include "f_assignGear_aaf.sqf";
+	#include "f_assignGear_aaf_1T.sqf";
 };
 
 // ====================================================================================
 
 // GEAR: FIA
-// The following block of code executes only if the unit is in a FIA slot (any faction); it
+// The following block of code executes only if the unit is in an FIA slot (any faction); it
 // automatically includes a file which contains the appropriate equipment data.
 
 if (_faction in ["blu_g_f","opf_g_f","ind_g_f"]) then {
-	#include "f_assignGear_fia.sqf"
+	#include "f_assignGear_fia_1T.sqf"
 };
 
 // ====================================================================================

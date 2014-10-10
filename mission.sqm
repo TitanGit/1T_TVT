@@ -71,7 +71,7 @@ class Mission
 	randomSeed=11823142;
 	class Intel
 	{
-		briefingName="F3";
+		briefingName="1TAC TvT Framework";
 		overviewText="*** Insert mission description here. ***";
 		resistanceWest=0;
 		startWeather=0.84999996;
