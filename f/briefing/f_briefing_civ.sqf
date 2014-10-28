@@ -4,10 +4,14 @@
 
 // FACTION: CIVILIAN
 
-// ====================================================================================
-
 // TASKS
-// The code below creates tasks. A (commented-out) sample task is included.
+// The code below creates tasks. Two (commented-out) sample tasks are included.
+// Note: tasks should be entered into this file in reverse order.
+
+// _task2 = player createSimpleTask ["OBJ_2"];
+// _task2 setSimpleTaskDescription ["IN DEPTH OBJECTIVE DESCRIPTION", "SHORT OBJECTIVE DESCRIPTION", "WAYPOINT TEXT"];
+// _task2 setSimpleTaskDestination WAYPOINTLOCATION;
+// _task2 setTaskState "Created";
 
 // _task1 = player createSimpleTask ["OBJ_1"];
 // _task1 setSimpleTaskDescription ["IN DEPTH OBJECTIVE DESCRIPTION", "SHORT OBJECTIVE DESCRIPTION", "WAYPOINT TEXT"];
@@ -21,43 +25,58 @@
 
 _cre = player createDiaryRecord ["diary", ["Credits","
 <br/>
-*** Insert mission credits here. ***
+Made By *** Insert mission credits here. ***
 <br/><br/>
-Made with F3 (http://www.ferstaberinde.com/f3/en/)
+1Tac Master Framework v0-1-0
+<br/>
+www.teamonetactical.com
+<br/>
+<br/>
+In part by...
+<br/>
+F3 Team - F3 Framework
+<br/>
+Naught - AI Caching and Distribution Script
+<br/>
 "]];
 
 // ====================================================================================
+// NOTES: RADIO CHANNELS
+// The code below creates the radio sub-section of notes.
 
-// NOTES: ADMINISTRATION
-// The code below creates the administration sub-section of notes.
-
-_adm = player createDiaryRecord ["diary", ["Administration","
+_adm = player createDiaryRecord ["diary", ["Radio Channels","
 <br/>
-*** Insert information on administration and logistics here. ***
-"]];
-
-// ====================================================================================
-
-// NOTES: EXECUTION
-// The code below creates the execution sub-section of notes.
-
-_exe = player createDiaryRecord ["diary", ["Execution","
+LONG RANGE [117/119/148/152]
 <br/>
-COMMANDER'S INTENT
+COMMAND - 1
 <br/>
-*** Insert very short summary of plan here. ***
-<br/><br/>
-MOVEMENT PLAN
+ALPHA - 2
 <br/>
-*** Insert movement instructions here. ***
-<br/><br/>
-FIRE SUPPORT PLAN
+BRAVO - 3
 <br/>
-*** Insert fire support instructions here. ***
-<br/><br/>
-SPECIAL TASKS
+CHARLIE - 4
 <br/>
-*** Insert instructions for specific units here. ***
+<br/>
+SHORT RANGE [343]
+<br/>
+ALPHA 1 - 1
+<br/>
+ALPHA 2 - 2
+<br/>
+ALPHA 3 - 3
+<br/>
+BRAVO 1 - 4
+<br/>
+BRAVO 2 - 5
+<br/>
+BRAVO 3 - 6
+<br/>
+CHARLIE 1 - 7
+<br/>
+CHARLIE 2 - 8
+<br/>
+CHARLIE 3 - 9
+<br/>
 "]];
 
 // ====================================================================================
@@ -77,7 +96,7 @@ _mis = player createDiaryRecord ["diary", ["Mission","
 
 _sit = player createDiaryRecord ["diary", ["Situation","
 <br/>
-*** Insert general information about the situation here.***
+*** Insert detailed information about the situation here.***
 <br/><br/>
 ENEMY FORCES
 <br/>
