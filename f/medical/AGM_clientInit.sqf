@@ -23,12 +23,11 @@ if (_typeOfUnit == "m") then
 	{player addItem "AGM_Epipen"} forEach [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15];
 	player addItem "AGM_Bloodbag";
 
-	// BACKPACK: NORMAL
-	if (f_param_backpacks == 1) then {
-		(unitBackpack player) addItemCargoGlobal ["AGM_Bandage", 15];
-		(unitBackpack player) addItemCargoGlobal ["AGM_Morphine", 15];
-		(unitBackpack player) addItemCargoGlobal ["AGM_Bloodbag", 4];
-	};
+
+	(unitBackpack player) addItemCargoGlobal ["AGM_Bandage", 15];
+	(unitBackpack player) addItemCargoGlobal ["AGM_Morphine", 15];
+	(unitBackpack player) addItemCargoGlobal ["AGM_Bloodbag", 4];
+};
 
 if (_typeOfUnit in ["co","dc","ftl"]) then
 {
